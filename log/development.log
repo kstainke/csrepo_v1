@@ -1,0 +1,752 @@
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-07-12 16:03:54) [GET]
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 344ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-07-12 16:03:54) [GET]
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 26ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-07-12 16:04:48) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 19ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-07-12 16:04:48) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 19ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/rails/info/properties]
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090712200730)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "hashed_password" varchar(255), "salt" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090712200730')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: sessions: DELETE FROM sessions[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-12 19:32:12) [GET]
+
+ActionController::RoutingError (No route matches "/login" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 19:32:22) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 129ms (DB: 0) | 302 Found [http://0.0.0.0/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 19:32:22) [GET]
+Rendering admin/login
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 19:32:40) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 12ms (DB: 0) | 302 Found [http://0.0.0.0/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 19:32:41) [GET]
+Rendering admin/login
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 19:32:44) [GET]
+Rendering admin/login
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-12 19:32:50) [GET]
+
+ActionController::RoutingError (No route matches "/user" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-07-12 19:33:00) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 14ms (DB: 0) | 302 Found [http://0.0.0.0/users]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 19:33:00) [GET]
+Rendering admin/login
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-07-12 19:33:58) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/users/new]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 19:33:58) [GET]
+Rendering admin/login
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-07-12 19:34:15) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 32ms (View: 21, DB: 0) | 200 OK [http://0.0.0.0/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-07-12 19:34:33) [POST]
+  Parameters: {"commit"=>"Add User", "authenticity_token"=>"HuExaw2yoNS+M4+HRMYHYizjpmDbt7iG4daQC+38qvk=", "user"=>{"name"=>"kstainke", "password_confirmation"=>"hansolo01", "password"=>"hansolo01"}}
+  [4;36;1mUser Exists (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'kstainke') LIMIT 1[0m
+  [4;35;1mUser Create (1.3ms)[0m   [0mINSERT INTO "users" ("name", "salt", "created_at", "updated_at", "hashed_password") VALUES('kstainke', '190736500.540469955687267', '2009-07-12 23:34:33', '2009-07-12 23:34:33', 'b497a7a4769c102dd53b9f4238761c9a3ea0191d')[0m
+Redirected to http://0.0.0.0:3000/users
+Completed in 36ms (DB: 2) | 302 Found [http://0.0.0.0/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-07-12 19:34:33) [GET]
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 24ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/users]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 19:39:37) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 18ms (DB: 0) | 302 Found [http://0.0.0.0/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 19:39:37) [GET]
+Rendering admin/login
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 19:39:59) [POST]
+  Parameters: {"name"=>"kstainke", "commit"=>"Login", "authenticity_token"=>"HuExaw2yoNS+M4+HRMYHYizjpmDbt7iG4daQC+38qvk=", "password"=>"hansolo01"}
+  [4;36;1mUser Load (7.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'kstainke') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin
+Completed in 90ms (DB: 8) | 302 Found [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 19:39:59) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering admin/index
+Completed in 32ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:22:50) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 33ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:24:32) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 20ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:25:01) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 23ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:25:31) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 26ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:26:56) [GET]
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 22ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:27:06) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 20ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:29:50) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 27ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:30:18) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 20ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:30:24) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 186ms (View: 162, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:30:47) [GET]
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 25ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:31:02) [GET]
+  [4;36;1mUser Load (2.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 31ms (View: 8, DB: 3) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:31:09) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 26ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:31:15) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 30ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:31:20) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 28ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:31:48) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 23ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:32:25) [GET]
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 22ms (View: 8, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:32:35) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 24ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:32:55) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 35ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:34:08) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 160ms (View: 142, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:34:28) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 19ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 192.168.1.5 at 2009-07-12 21:36:34) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://192.168.1.4:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 16ms (DB: 0) | 302 Found [http://192.168.1.4/admin]
+
+
+Processing AdminController#login (for 192.168.1.5 at 2009-07-12 21:36:35) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://192.168.1.4/admin/login]
+
+
+Processing ApplicationController#index (for 192.168.1.5 at 2009-07-12 21:36:56) [GET]
+
+ActionController::RoutingError (No route matches "/courses" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:38:35) [GET]
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 33ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:39:03) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 21ms (View: 8, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:40:40) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 21ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:41:12) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 21ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:41:21) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 32ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:41:40) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:43:57) [GET]
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 125ms (View: 110, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:44:32) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 18ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:45:43) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 26ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:47:01) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 21ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:47:39) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 36ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:47:52) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 24ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:48:02) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 23ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:48:37) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 17ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:49:36) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:49:59) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 17ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:50:07) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 25ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:50:17) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 26ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:50:46) [GET]
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 19ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:52:31) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 15ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:52:53) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 34ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:53:13) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 26ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:53:21) [GET]
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 17ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:53:28) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 21ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:53:36) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 18ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:53:38) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 20ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:53:49) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 18ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:53:56) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 24ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:54:35) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 16ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:54:44) [GET]
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 24ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:55:47) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 35ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:55:54) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 22ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#login (for 192.168.1.5 at 2009-07-12 21:57:56) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://192.168.1.4/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:58:24) [GET]
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 22ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#login (for 192.168.1.5 at 2009-07-12 21:58:29) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://192.168.1.4/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:58:49) [GET]
+  [4;36;1mUser Load (2.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 19ms (View: 2, DB: 2) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:58:55) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 21:59:02) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 19ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/admin]
+
+
+Processing AdminController#login (for 192.168.1.5 at 2009-07-12 21:59:07) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://192.168.1.4/admin/login]
+
+
+Processing AdminController#login (for 192.168.1.5 at 2009-07-12 21:59:38) [POST]
+  Parameters: {"name"=>"kstainke", "commit"=>"Login", "authenticity_token"=>"38EWKTTWyywJ3l+KDKz4j5yXLa+tqeJWmTj/njASbtk=", "password"=>"hansolo01"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'kstainke') LIMIT 1[0m
+Redirected to http://192.168.1.4:3000/admin
+Completed in 14ms (DB: 0) | 302 Found [http://192.168.1.4/admin/login]
+
+
+Processing AdminController#index (for 192.168.1.5 at 2009-07-12 21:59:39) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 17ms (View: 3, DB: 0) | 200 OK [http://192.168.1.4/admin]
+
+
+Processing AdminController#logout (for 127.0.0.1 at 2009-07-12 22:00:15) [GET]
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/login
+Completed in 16ms (DB: 1) | 302 Found [http://0.0.0.0/admin/logout]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:00:15) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:00:22) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:01:01) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:01:04) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:02:03) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:03:11) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:03:17) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:03:49) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:04:46) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:05:09) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:08:08) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:08:13) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:08:16) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:08:23) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:09:13) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 22:09:25) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 19ms (DB: 0) | 302 Found [http://0.0.0.0/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:09:25) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:11:05) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:11:28) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-07-12 22:11:31) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 10ms (DB: 0) | 302 Found [http://0.0.0.0/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-07-12 22:11:31) [GET]
+Rendering template within layouts/application
+Rendering admin/login
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/admin/login]

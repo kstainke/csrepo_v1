@@ -1,0 +1,31 @@
+a:link {color: #39F; text-decoration: underline; }
+a:active {color: #0000ff; text-decoration: underline; }
+a:visited {color: #CCC; text-decoration: underline; }
+a:hover {color: #ff0000; text-decoration: none; }
+
+#top
+{
+padding: .5em;
+background-color: #162EAE;
+border-bottom: 1px solid gray;
+}
+
+#top_heading_text
+{
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	float: right;
+	text-align: right;
+}
+
+#footer
+{
+clear: both;
+margin: 0;
+padding: .5em;
+color: white;
+background-color: #071871;
+border-top: 1px solid gray;
+text-align: center;
+}
