@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  filename: MyString
+  content_type: MyString
+  data: 
+  tally: 1
+  category_id: 1
+
+two:
+  filename: MyString
+  content_type: MyString
+  data: 
+  tally: 1
+  category_id: 1

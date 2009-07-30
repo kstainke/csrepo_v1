@@ -13,11 +13,14 @@ class AdminController < ApplicationController
 
   def logout
     session[:user_id] = nil
-    flash[:notice] = "Logged out"
+    flash[:notice] = "You have successfully logged out"
     redirect_to(:action => "login")
   end
 
   def index
+  end
+  
+  def view_repo
   end
 
 end

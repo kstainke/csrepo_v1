@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Users: <%= controller.action_name %></title>
+    <script type="text/javascript" src="javascripts/prototype.js"></script> 
+    <script type="text/javascript" src="javascripts/effects.js"></script>
+    <script type="text/javascript" src="javascripts/window.js"></script>
+    <script type="text/javascript" src="javascripts/window_effects.js"></script>
+
+    <%= stylesheet_link_tag 'themes/default' %>
+    <%= stylesheet_link_tag 'themes/spread' %>
+    <%= stylesheet_link_tag 'style' %>
+  <%= stylesheet_link_tag 'style' %>
+</head>
+<body>
+<div id="top">
+<a href="/admin"><img src="/images/UTPA-Logo.png" alt="UTPA Logo"><br/>
+<a href="/admin"><font color="white">Home</font></a> | 
+<a href="/admin/view_repo"><font color="white">View Repository</font></a> | 
+<a href=""><font color="white">Create Course</font></a> | 
+<a href="/manage"><font color="white">Manage Repository</font></a>
+<div id="top_heading_text"><a href="/admin"><font size="6" color="white">Computer Science Lab Assignment Repository</font></a><br />
+<a href="http://www.utpa.edu/" target="_blank"><font size="5" color="white">University of Texas Pan American</font></a><br />
+<a href="http://www.cs.panam.edu/" target="_blank"><font size="4" color="white">Department of Computer Science</font></a>
+<br />
+<% if session[:user_id] %>
+  <% @current_user = User.find_by_id(session[:user_id]) %>
+    <font size="2" color="orange">You are logged in as <%= @current_user.name %></font>
+  <em><%= link_to "(logout)", :controller => 'admin', :action => 'logout' %></em>
+<% end %>
+</div>
+</div>
+
+<p style="color: green"><%= flash[:notice] %></p>
+
+<%= yield %>
+
+<div id="footer">
+<a href="/admin"><font color="white">CS Repository Home</font></a> | <a href="http://www.cs.panam.edu/" target="_blank"><font color="white">Department of Computer Science Home</font></a> | <a href="http://www.utpa.edu/" target="_blank"><font color="white">UTPA Home</font></a>
+</div>
+</body>
+</html>

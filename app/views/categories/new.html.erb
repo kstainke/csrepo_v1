@@ -1,0 +1,17 @@
+<h1><p align="center">Create a new category</p></h1>
+
+<% form_for(@category) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :category %>:<br />
+    <%= f.text_field :category %>
+  </p>
+  <p>
+    <%= f.label :course_id %>:<br />
+    <%= f.text_field :course_id %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>

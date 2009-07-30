@@ -1,0 +1,19 @@
+</div>
+</div>
+<h2><p align="center">Manage Repository</p></h2>
+<a href="javascript:void showWindow();">Add Category</a>
+
+<script>
+function showWindow()
+{
+  win = new Window( { className: 'spread', url: 'categories/new',
+    title: 'Create A Category', width:400,
+    height:300, destroyOnClose: true, recenterAuto:false } ); 
+  win.showCenter();
+}
+</script>
+<% javascript_tag "alert('Are you SURE you want to apply these changes?')" %>
+<br/><br/>
+<% @categories.each do |category| %>
+  <%= category.category %><br/><br/>
+<% end %>
