@@ -1,0 +1,29 @@
+<h1>Edit</h1>
+
+<% unless @category.empty? %>
+<ul>
+  <% for category in @categories %>
+  <li>
+    <%=h category.name %><%= editable_content(
+      :content => {
+        :element => 'span',
+        :text => category.category,
+        :options => {
+          :id => "mortal_enemy_edit_#{category.id}",
+          :class => 'editable-content'
+        }
+       },
+      :url => {
+        :controller => 'categories',
+        :action => 'update',
+        :id => category.id
+       },
+      :ajax => {
+        :okText => "'is why I want to kill them'",
+        :cancelText => "'Nevermind'"
+       }
+    ) %>
+  </li>
+  <% end %>
+</ul>
+<% end %>

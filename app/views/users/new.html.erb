@@ -7,7 +7,22 @@
   <legend>Enter User Details</legend>
   
   <div>
-    <%= f.label :name %>:
+    <%= f.label "First Name" %>:
+    <%= f.text_field :fname, :size => 40 %>
+  </div>
+  
+  <div>
+    <%= f.label "Last Name" %>:
+    <%= f.text_field :lname, :size => 40 %>
+  </div>
+  
+  <div>
+    <%= f.label :user_level %>:
+    <%= f.select( :user_level, { "User (View Only Privileges)" => "false", "Admin (Full Access)" => "true"}) %>
+  </div>
+  
+  <div>
+    <%= f.label "Desired Username" %>:
     <%= f.text_field :name, :size => 40 %>
   </div>
   

@@ -21,6 +21,7 @@ class AdminController < ApplicationController
   end
   
   def view_repo
+    @courses = Course.all
   end
 
 end

@@ -1,1 +1,6 @@
 <h2><p align="center">Viewing Repository</p></h2>
+
+<p align="left">
+  Select Course: <%= select_tag :course_id, options_for_select(Course::COURSE_NUMBERS) %>
+  <%= submit_tag "Go" %>
+</p>
