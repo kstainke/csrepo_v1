@@ -21,7 +21,7 @@
 <br />
 <% if session[:user_id] %>
   <% @current_user = User.find_by_id(session[:user_id]) %>
-    <font size="2" color="orange">You are logged in as <%= @current_user.name %></font>
+    <font size="2" color="orange">Hello, <%= @current_user.fname %>!</font>
   <em><%= link_to "(logout)", :controller => 'admin', :action => 'logout' %></em>
 <% end %>
 </div>
