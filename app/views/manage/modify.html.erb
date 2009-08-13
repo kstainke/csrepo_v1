@@ -19,6 +19,8 @@ function showWindow()
 </script>
 
 <% @categories_by_course = category_by_course(@course.course_number) %>
-<% for category in @categories_by_course %>
-    <p><%= category.category %></p>
+<% if @categories_by_course %>
+  <% for category in @categories_by_course %>
+      <p><%= category.category %></p>
+  <% end %>
 <% end %>
