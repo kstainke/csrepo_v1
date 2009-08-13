@@ -1,11 +1,11 @@
 </div>
 </div>
-<h2><p align="center">Manage Repository</p></h2>
-<br/>
+<h2><p align="center">Manage Repository: <font color="green">CSCI <%= @course.course_number %></font></p></h2>
 <p align="left">
   Select Course: <%= select_tag :course_number, options_for_select(Course::COURSE_NUMBERS) %>
   <%= submit_tag "Go" %>
 </p>
+
 <a href="javascript:void showWindow();">Add Category</a>
 
 <script>
@@ -17,3 +17,8 @@ function showWindow()
   win.showCenter();
 }
 </script>
+
+<% @categories_by_course = category_by_course(@course.course_number) %>
+<% for category in @categories_by_course %>
+    <p><%= category.category %></p>
+<% end %>

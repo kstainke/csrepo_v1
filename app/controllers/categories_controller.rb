@@ -20,9 +20,9 @@ class CategoriesController < ApplicationController
   end
   
   def new
-    @course_id = params[:course_id]
+    @course_number = Course.find_by_course_number(params[:course_number])
     @category = Category.new
-    @assignment.course_id = @course_id
+    @category.course_id = @course_number
 
     respond_to do |format|
       format.html # new.html.erb

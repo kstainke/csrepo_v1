@@ -9,9 +9,9 @@
   </p>
   <p>
     <%= f.label :course_id %>:<br />
-    <%= f.text_field :course_id %>
+    <%= f.select :course_number, Course::COURSE_NUMBERS, :params => :course_number %>
   </p>
   <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Create', :disable_with=>"Processing..."  %>
   </p>
 <% end %>

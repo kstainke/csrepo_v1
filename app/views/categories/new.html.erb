@@ -4,16 +4,12 @@
   <%= f.error_messages %>
 
   <p>
-    Assignment for Course:<br />
-    <%= f.select :course_id, Assignment::COURSE_NUMBERS, :params => :course_id %>
-  </p>
-  <p>
     <%= f.label :category %>:<br />
     <%= f.text_field :category %>
   </p>
   <p>
     <%= f.label :course_id %>:<br />
-    <%= f.text_field :course_id %>
+    <%= f.select :course_id, Course::COURSE_NUMBERS, :params => :course_number %>
   </p>
   <p>
     <%= f.submit 'Create' %>

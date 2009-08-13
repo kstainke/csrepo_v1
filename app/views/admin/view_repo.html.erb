@@ -1,6 +1,13 @@
-<h2><p align="center">Viewing Repository</p></h2>
+<h2><p align="center">Viewing Repository: CSCI <%= @course.course_number %></p></h2>
 
 <p align="left">
-  Select Course: <%= select_tag :course_id, options_for_select(Course::COURSE_NUMBERS) %>
+  Select Course: <%= select_tag :course_number, options_for_select(Course::COURSE_NUMBERS) %>
   <%= submit_tag "Go" %>
 </p>
+
+<p><%= @course.course_number %></p>
+
+<% @categories_by_course = category_by_course(@course.course_number) %>
+<% for category in @categories_by_course %>
+    <p><%= category.category %></p>
+<% end %>
