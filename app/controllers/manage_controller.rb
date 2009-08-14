@@ -5,6 +5,7 @@ class ManageController < ApplicationController
   end
   
   def modify
+    
     if params[:course_number]
       if Course.find_by_course_number(params[:course_number])
         @course = Course.find_by_course_number(params[:course_number])
@@ -20,6 +21,7 @@ class ManageController < ApplicationController
       format.html # view_repo.html.erb
       format.xml  { render :xml => @course }
     end
+    
   end
   
   def generate_course_page

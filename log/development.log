@@ -14937,3 +14937,2102 @@ ActionController::RoutingError (No route matches "/manage/modify/javascripts/con
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 10:51:24) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.8ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 176ms (View: 50, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 10:51:58) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.5ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.9ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 40ms (View: 15, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing ManageController#index (for 127.0.0.1 at 2009-08-13 10:52:00) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCategory Load (2.1ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/manage
+Rendering manage/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 101ms (View: 79, DB: 3) | 200 OK [http://127.0.0.1/manage]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 10:52:08) [GET]
+  Parameters: {"course_number"=>"1170"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1170') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1170') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 37ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/1170]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 10:52:08) [GET]
+
+ActionController::RoutingError (No route matches "/manage/modify/javascripts/prototype.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 10:52:08) [GET]
+
+ActionController::RoutingError (No route matches "/manage/modify/javascripts/effects.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 10:52:08) [GET]
+
+ActionController::RoutingError (No route matches "/manage/modify/javascripts/window.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 10:52:08) [GET]
+
+ActionController::RoutingError (No route matches "/manage/modify/javascripts/window_effects.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 10:52:08) [GET]
+
+ActionController::RoutingError (No route matches "/manage/modify/javascripts/controls.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 10:52:08) [GET]
+
+ActionController::RoutingError (No route matches "/manage/modify/javascripts/controls.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 10:57:39) [GET]
+  Parameters: {"course_number"=>"1170"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1170') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1170') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.9ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 41ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/1170]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 10:57:39) [GET]
+
+ActionController::RoutingError (No route matches "/manage/modify/javascripts/prototype.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 10:57:39) [GET]
+
+ActionController::RoutingError (No route matches "/manage/modify/javascripts/effects.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 10:57:39) [GET]
+
+ActionController::RoutingError (No route matches "/manage/modify/javascripts/window.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 10:57:39) [GET]
+
+ActionController::RoutingError (No route matches "/manage/modify/javascripts/window_effects.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 10:57:40) [GET]
+
+ActionController::RoutingError (No route matches "/manage/modify/javascripts/controls.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 10:57:40) [GET]
+
+ActionController::RoutingError (No route matches "/manage/modify/javascripts/window_effects.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 10:57:40) [GET]
+
+ActionController::RoutingError (No route matches "/manage/modify/javascripts/controls.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 10:59:49) [GET]
+  Parameters: {"course_number"=>"1170"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1170') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1170') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (1.1ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 47ms (View: 24, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/1170]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 10:59:49) [GET]
+
+ActionController::RoutingError (No route matches "/themes/default.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 10:59:50) [GET]
+
+ActionController::RoutingError (No route matches "/themes/spread.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2009-08-13 10:59:52) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering categories/new
+Completed in 110ms (View: 69, DB: 1) | 200 OK [http://127.0.0.1/categories/new]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:00:01) [GET]
+  Parameters: {"course_number"=>"1170"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1170') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1170') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.9ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 41ms (View: 21, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/1170]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 11:00:01) [GET]
+
+ActionController::RoutingError (No route matches "/themes/default.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 11:00:01) [GET]
+
+ActionController::RoutingError (No route matches "/themes/spread.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 11:00:01) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 11:00:02) [GET]
+
+ActionController::RoutingError (No route matches "/themes/default.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 11:00:02) [GET]
+
+ActionController::RoutingError (No route matches "/themes/spread.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-13 11:00:02) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2009-08-13 11:00:04) [GET]
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (1.3ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering categories/new
+Completed in 48ms (View: 6, DB: 2) | 200 OK [http://127.0.0.1/categories/new]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:00:15) [GET]
+  Parameters: {"course_number"=>"1170"}
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1170') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1170') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 44ms (View: 22, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/1170]
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2009-08-13 11:00:17) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering categories/new
+Completed in 26ms (View: 5, DB: 1) | 200 OK [http://127.0.0.1/categories/new]
+
+
+Processing ManageController#index (for 127.0.0.1 at 2009-08-13 11:00:24) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/manage
+Rendering manage/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 29ms (View: 9, DB: 1) | 200 OK [http://127.0.0.1/manage]
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2009-08-13 11:00:26) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering categories/new
+Completed in 53ms (View: 8, DB: 1) | 200 OK [http://127.0.0.1/categories/new]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:00:36) [GET]
+  Parameters: {"course_number"=>"1170"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1170') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1170') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.9ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 31ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/1170]
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2009-08-13 11:00:39) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering categories/new
+Completed in 94ms (View: 23, DB: 1) | 200 OK [http://127.0.0.1/categories/new]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:00:49) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.6ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (1.4ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 42ms (View: 16, DB: 3) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2009-08-13 11:00:52) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (1.2ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering categories/new
+Completed in 59ms (View: 7, DB: 2) | 200 OK [http://127.0.0.1/categories/new]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:01:28) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 35ms (View: 16, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:01:44) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 41ms (View: 19, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:02:08) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (2.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.6ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 69ms (View: 31, DB: 4) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:02:08) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (2.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 123ms (View: 50, DB: 4) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:02:24) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.8ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 80ms (View: 39, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:02:52) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 48ms (View: 16, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:02:55) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 35ms (View: 15, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:03:50) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.6ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 47ms (View: 14, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:04:05) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.5ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 36ms (View: 15, DB: 1) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2009-08-13 11:04:06) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering categories/new
+Completed in 107ms (View: 51, DB: 1) | 200 OK [http://127.0.0.1/categories/new]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:05:59) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 56ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:05:59) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 45ms (View: 19, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:07:41) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.7ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (1.0ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 67ms (View: 20, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:10:04) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.5ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 40ms (View: 19, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:10:21) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 63ms (View: 21, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:10:21) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.5ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 93ms (View: 29, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:10:33) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.9ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 38ms (View: 13, DB: 3) | 200 OK [http://127.0.0.1/manage/modify/1380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:10:37) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (1.4ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 72ms (View: 31, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/1380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:10:40) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 36ms (View: 13, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/1380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:11:11) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 31ms (View: 13, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/1380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:11:13) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (1.1ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 43ms (View: 14, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/1380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:11:15) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (2.4ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 51ms (View: 25, DB: 3) | 200 OK [http://127.0.0.1/manage/modify/1380]
+  [4;36;1mCategory Load (1.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (1.3ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:19:21) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 34ms (View: 15, DB: 1) | 200 OK [http://127.0.0.1/manage/modify/1380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:19:27) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 31ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:19:32) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 32ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:19:33) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 28ms (View: 11, DB: 1) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:19:34) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 35ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:19:35) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.5ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 38ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:19:36) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (1.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 49ms (View: 16, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:19:49) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (1.6ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.9ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 41ms (View: 16, DB: 3) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:20:25) [GET]
+  Parameters: {"course_number"=>"1170"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1170') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1170') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 25ms (View: 10, DB: 1) | 200 OK [http://127.0.0.1/manage/modify/1170]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:21:04) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (1.7ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 52ms (View: 14, DB: 3) | 200 OK [http://127.0.0.1/manage/modify/1380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:23:36) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.course_number):
+  app/controllers/manage_controller.rb:8:in `modify'
+
+Rendered rescues/_trace (148.8ms)
+Rendered rescues/_request_and_response (44.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#modify (for 127.0.0.1 at 2009-08-13 11:24:34) [GET]
+  Parameters: {"course_number"=>"1380"}
+
+SyntaxError (/Users/karlstainke/Documents/csrepo_v1/app/controllers/manage_controller.rb:26: formal argument cannot be an instance variable
+    def category_by_course(@course.course_number)
+                                  ^
+/Users/karlstainke/Documents/csrepo_v1/app/controllers/manage_controller.rb:26: syntax error, unexpected '.', expecting ')'
+    def category_by_course(@course.course_number)
+                                   ^
+/Users/karlstainke/Documents/csrepo_v1/app/controllers/manage_controller.rb:41: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (96.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:25:28) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.course_number):
+  app/controllers/manage_controller.rb:8:in `modify'
+
+Rendered rescues/_trace (59.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:26:37) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+
+NoMethodError (undefined method `category_by_course' for #<ManageController:0x2411714>):
+  app/controllers/manage_controller.rb:8:in `modify'
+
+Rendered rescues/_trace (168.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:26:38) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+
+NoMethodError (undefined method `category_by_course' for #<ManageController:0x25b4210>):
+  app/controllers/manage_controller.rb:8:in `modify'
+
+Rendered rescues/_trace (52.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#modify (for 127.0.0.1 at 2009-08-13 11:27:40) [GET]
+  Parameters: {"course_number"=>"1380"}
+
+SyntaxError (/Users/karlstainke/Documents/csrepo_v1/app/controllers/manage_controller.rb:32: syntax error, unexpected ':', expecting kEND):
+  
+
+Rendered rescues/_trace (54.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:28:16) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 196ms (View: 164, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/1380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:28:22) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 36ms (View: 7, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 11:28:24) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 47ms (View: 9, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2009-08-13 13:48:16) [GET]
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering categories/new
+Completed in 82ms (View: 9, DB: 1) | 200 OK [http://127.0.0.1/categories/new]
+
+
+Processing CategoriesController#create (for 127.0.0.1 at 2009-08-13 13:48:29) [POST]
+  Parameters: {"category"=>{"category"=>"This category", "course_id"=>"2380"}, "commit"=>"Create", "authenticity_token"=>"6J77L2rCRx/k8CIqT4z1f7TWtNTHuqhGmp4tdoAjXT8="}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCategory Create (16.1ms)[0m   [0;1mINSERT INTO "categories" ("category", "created_at", "updated_at", "course_id") VALUES('This category', '2009-08-13 18:48:29', '2009-08-13 18:48:29', 2380)[0m
+Redirected to http://127.0.0.1:3000/categories/6
+Completed in 39ms (DB: 17) | 302 Found [http://127.0.0.1/categories]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2009-08-13 13:48:29) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, edit, index, new, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 13:51:00) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCategory Load (0.9ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCourse Load (0.5ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 52ms (View: 6, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 13:52:45) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 120ms (View: 103, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 13:52:46) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 33ms (View: 13, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 13:52:47) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.6ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 41ms (View: 11, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 13:53:27) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.7ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.9ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 65ms (View: 33, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 13:53:28) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.6ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (1.2ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 32ms (View: 11, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 14:06:29) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.7ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+ERROR: compiling _run_erb_app47views47manage47modify46html46erb RAISED compile error
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected tASSOC, expecting '}'
+;  form_tag { :controller => "manage", :action => "modify"...
+                            ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected ',', expecting '}'
+...tag { :controller => "manage", :action => "modify" }, :html ...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected ',', expecting kEND
+...anage", :action => "modify" }, :html => { :course_number => ...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected kDO, expecting '}'
+...:course_number => "my_form" do } ; @output_buffer.concat "\n...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:30: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47manage47modify46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "</div>\n</div>\n<h2><p align=\"center\">Manage Repository: <font color=\"green\">CSCI "
+
+; @output_buffer.concat(( @course.course_number ).to_s); @output_buffer.concat "</font></p></h2>\n<p align=\"left\">\n  "
+
+;  form_tag { :controller => "manage", :action => "modify" }, :html => { :course_number => "my_form" do } ; @output_buffer.concat "\n  Select Course: "
+; @output_buffer.concat(( select_tag :course_number, options_for_select(Course::COURSE_NUMBERS)).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( submit_tag "Go" ).to_s); @output_buffer.concat "\n  "
+;  end ; @output_buffer.concat "\n</p>\n\n<a href=\"javascript:void showWindow();\">Add Category</a>\n\n<script>\nfunction showWindow()\n{\n  win = new Window( { className: 'spread', url: '/categories/new',\n    title: 'Create A Category', width:400,\n    height:300, destroyOnClose: true, recenterAuto:false } ); \n  win.showCenter();\n}\n</script>\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+;  course_number = @course.course_number ; @output_buffer.concat "\n"
+;  @categories_by_course = category_by_course(course_number) ; @output_buffer.concat "\n"
+;  if @categories_by_course ; @output_buffer.concat "\n  <p>whuddfuxup</p>\n  "
+
+;  for cat in @categories_by_course ; @output_buffer.concat "\n      <p>ohm</p>\n  "
+
+;  end ; @output_buffer.concat "\n"
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:30:in `compile!'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/karlstainke/Documents/csrepo_v1/app/controllers/manage_controller.rb:20:in `modify'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected tASSOC, expecting '}'
+;  form_tag { :controller => "manage", :action => "modify"...
+                            ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected ',', expecting '}'
+...tag { :controller => "manage", :action => "modify" }, :html ...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected ',', expecting kEND
+...anage", :action => "modify" }, :html => { :course_number => ...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected kDO, expecting '}'
+...:course_number => "my_form" do } ; @output_buffer.concat "\n...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:30: syntax error, unexpected kENSURE, expecting $end) on line #5 of app/views/manage/modify.html.erb:
+2: </div>
+3: <h2><p align="center">Manage Repository: <font color="green">CSCI <%= @course.course_number %></font></p></h2>
+4: <p align="left">
+5:   <% form_tag { :controller => "manage", :action => "modify" }, :html => { :course_number => "my_form" do } %>
+6:   Select Course: <%= select_tag :course_number, options_for_select(Course::COURSE_NUMBERS)%>
+7:   <%= submit_tag "Go" %>
+8:   <% end %>
+
+    app/views/manage/modify.html.erb:30:in `compile!'
+    app/controllers/manage_controller.rb:20:in `modify'
+
+Rendered rescues/_trace (75.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 14:09:05) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+ERROR: compiling _run_erb_app47views47manage47modify46html46erb RAISED compile error
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected tASSOC, expecting '}'
+;  form_tag { :controller => "manage", :action => "modify"...
+                            ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected ',', expecting '}'
+...tag { :controller => "manage", :action => "modify" }, :html ...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected ',', expecting kEND
+...anage", :action => "modify" }, :html => { :course_number => ...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected kDO, expecting '}'
+...:course_number => "my_form" do } ; @output_buffer.concat "\n...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:33: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47manage47modify46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "</div>\n</div>\n<h2><p align=\"center\">Manage Repository: <font color=\"green\">CSCI "
+
+; @output_buffer.concat(( @course.course_number ).to_s); @output_buffer.concat "</font></p></h2>\n<p align=\"left\">\n  "
+
+;  form_tag { :controller => "manage", :action => "modify" }, :html => { :course_number => "my_form" do } ; @output_buffer.concat "\n    <select id=\"course[course_number]\" name=\"course[course_number]\">\n      "
+
+; @output_buffer.concat(( options_from_collection_for_select(@accounts, 'id', 'name') ).to_s); @output_buffer.concat "\n    </select>\n\n  "
+
+
+; @output_buffer.concat(( submit_tag "Go" ).to_s); @output_buffer.concat "\n  "
+;  end ; @output_buffer.concat "\n</p>\n\n<a href=\"javascript:void showWindow();\">Add Category</a>\n\n<script>\nfunction showWindow()\n{\n  win = new Window( { className: 'spread', url: '/categories/new',\n    title: 'Create A Category', width:400,\n    height:300, destroyOnClose: true, recenterAuto:false } ); \n  win.showCenter();\n}\n</script>\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+;  course_number = @course.course_number ; @output_buffer.concat "\n"
+;  @categories_by_course = category_by_course(course_number) ; @output_buffer.concat "\n"
+;  if @categories_by_course ; @output_buffer.concat "\n  <p>whuddfuxup</p>\n  "
+
+;  for cat in @categories_by_course ; @output_buffer.concat "\n      <p>ohm</p>\n  "
+
+;  end ; @output_buffer.concat "\n"
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:33:in `compile!'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/karlstainke/Documents/csrepo_v1/app/controllers/manage_controller.rb:20:in `modify'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected tASSOC, expecting '}'
+;  form_tag { :controller => "manage", :action => "modify"...
+                            ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected ',', expecting '}'
+...tag { :controller => "manage", :action => "modify" }, :html ...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected ',', expecting kEND
+...anage", :action => "modify" }, :html => { :course_number => ...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected kDO, expecting '}'
+...:course_number => "my_form" do } ; @output_buffer.concat "\n...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:33: syntax error, unexpected kENSURE, expecting $end) on line #5 of app/views/manage/modify.html.erb:
+2: </div>
+3: <h2><p align="center">Manage Repository: <font color="green">CSCI <%= @course.course_number %></font></p></h2>
+4: <p align="left">
+5:   <% form_tag { :controller => "manage", :action => "modify" }, :html => { :course_number => "my_form" do } %>
+6:     <select id="course[course_number]" name="course[course_number]">
+7:       <%= options_from_collection_for_select(@accounts, 'id', 'name') %>
+8:     </select>
+
+    app/views/manage/modify.html.erb:33:in `compile!'
+    app/controllers/manage_controller.rb:20:in `modify'
+
+Rendered rescues/_trace (247.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 14:09:48) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+ERROR: compiling _run_erb_app47views47manage47modify46html46erb RAISED compile error
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected tASSOC, expecting '}'
+;  form_tag { :controller => "manage", :action => "modify"...
+                            ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected ',', expecting '}'
+...tag { :controller => "manage", :action => "modify" }, :html ...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected ',', expecting kEND
+...anage", :action => "modify" }, :html => { :course_number => ...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected kDO, expecting '}'
+...:course_number => "my_form" do } ; @output_buffer.concat "\n...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:30: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47manage47modify46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "</div>\n</div>\n<h2><p align=\"center\">Manage Repository: <font color=\"green\">CSCI "
+
+; @output_buffer.concat(( @course.course_number ).to_s); @output_buffer.concat "</font></p></h2>\n<p align=\"left\">\n  "
+
+;  form_tag { :controller => "manage", :action => "modify" }, :html => { :course_number => "my_form" do } ; @output_buffer.concat "\n  Select Course: "
+; @output_buffer.concat(( select_tag :course_number, options_for_select(Course::COURSE_NUMBERS)).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( submit_tag "Go" ).to_s); @output_buffer.concat "\n  "
+;  end ; @output_buffer.concat "\n</p>\n\n<a href=\"javascript:void showWindow();\">Add Category</a>\n\n<script>\nfunction showWindow()\n{\n  win = new Window( { className: 'spread', url: '/categories/new',\n    title: 'Create A Category', width:400,\n    height:300, destroyOnClose: true, recenterAuto:false } ); \n  win.showCenter();\n}\n</script>\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+;  course_number = @course.course_number ; @output_buffer.concat "\n"
+;  @categories_by_course = category_by_course(course_number) ; @output_buffer.concat "\n"
+;  if @categories_by_course ; @output_buffer.concat "\n  <p>whuddfuxup</p>\n  "
+
+;  for cat in @categories_by_course ; @output_buffer.concat "\n      <p>ohm</p>\n  "
+
+;  end ; @output_buffer.concat "\n"
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:30:in `compile!'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/karlstainke/Documents/csrepo_v1/app/controllers/manage_controller.rb:20:in `modify'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected tASSOC, expecting '}'
+;  form_tag { :controller => "manage", :action => "modify"...
+                            ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected ',', expecting '}'
+...tag { :controller => "manage", :action => "modify" }, :html ...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected ',', expecting kEND
+...anage", :action => "modify" }, :html => { :course_number => ...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:5: syntax error, unexpected kDO, expecting '}'
+...:course_number => "my_form" do } ; @output_buffer.concat "\n...
+                              ^
+/Users/karlstainke/Documents/csrepo_v1/app/views/manage/modify.html.erb:30: syntax error, unexpected kENSURE, expecting $end) on line #5 of app/views/manage/modify.html.erb:
+2: </div>
+3: <h2><p align="center">Manage Repository: <font color="green">CSCI <%= @course.course_number %></font></p></h2>
+4: <p align="left">
+5:   <% form_tag { :controller => "manage", :action => "modify" }, :html => { :course_number => "my_form" do } %>
+6:   Select Course: <%= select_tag :course_number, options_for_select(Course::COURSE_NUMBERS)%>
+7:   <%= submit_tag "Go" %>
+8:   <% end %>
+
+    app/views/manage/modify.html.erb:30:in `compile!'
+    app/controllers/manage_controller.rb:20:in `modify'
+
+Rendered rescues/_trace (76.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 14:10:38) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 37ms (View: 18, DB: 1) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 14:14:52) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 32ms (View: 15, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 14:14:55) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 34ms (View: 13, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 14:15:27) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (1.2ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 42ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 14:16:01) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 36ms (View: 17, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+
+
+Processing ManageController#modify (for 127.0.0.1 at 2009-08-13 14:16:02) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/manage
+Rendering manage/modify
+  [4;35;1mCategory Load (0.9ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 31ms (View: 11, DB: 2) | 200 OK [http://127.0.0.1/manage/modify/2380]
+  [4;36;1mSQL (8.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090712200730)
+Migrating to CreateCourses (20090729194944)
+Migrating to CreateCategories (20090729195111)
+Migrating to CreateLabs (20090729200707)
+Migrating to AddColumnsToUsers (20090811140014)
+Migrating to LoadUsersData (20090811140943)
+Migrating to PopulateCoursesDb (20090811184854)
+Migrating to AddLetterColumnToCategories (20090813195451)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mALTER TABLE "categories" ADD "letter" varchar(255)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090813195451')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("categories")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("courses")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("labs")[0m
+  [4;36;1mCategory Load (1.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (3.9ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:22:09) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = 1170) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+
+ActionView::TemplateError (undefined method `category_by_course' for #<ActionView::Base:0x2660bf0>) on line #10 of app/views/admin/view_repo.html.erb:
+7: 
+8: <p><%= @course.course_number %></p>
+9: 
+10: <% @categories_by_course = category_by_course(@course.course_number) %>
+11: <% if @categories_by_course %>
+12:   <% for category in @categories_by_course %>
+13:       <p><%= category.category %></p>
+
+    app/views/admin/view_repo.html.erb:10
+    app/controllers/admin_controller.rb:36:in `view_repo'
+
+Rendered rescues/_trace (74.5ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:22:26) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = 1170) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 55ms (View: 37, DB: 1) | 200 OK [http://127.0.0.1/admin/view_repo]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:22:39) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = 1170) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 150ms (View: 33, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo]
+
+
+Processing AdminController#1380 (for 127.0.0.1 at 2009-08-13 15:22:57) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1380. Actions: index, login, logout, and view_repo):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:23:04) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.5ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (1.4ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 49ms (View: 16, DB: 3) | 200 OK [http://127.0.0.1/admin/view_repo/1380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:23:37) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.7ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 36ms (View: 17, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/1380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:23:39) [GET]
+  Parameters: {"course_number"=>"1380"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '1380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 36ms (View: 12, DB: 1) | 200 OK [http://127.0.0.1/admin/view_repo/1380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:23:45) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (1.1ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 30ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:24:24) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (1.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.5ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 100ms (View: 22, DB: 3) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:24:25) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 34ms (View: 14, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:24:25) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 44ms (View: 19, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:24:26) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 28ms (View: 11, DB: 1) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:24:26) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.8ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 39ms (View: 11, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:27:40) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 50ms (View: 17, DB: 1) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:27:43) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 28ms (View: 11, DB: 1) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:28:01) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 33ms (View: 15, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:28:02) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 35ms (View: 12, DB: 1) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:28:56) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 38ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:28:56) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (2.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 48ms (View: 24, DB: 4) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:29:34) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 38ms (View: 17, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:30:04) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 39ms (View: 16, DB: 1) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:30:04) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 51ms (View: 20, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:30:13) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 64ms (View: 33, DB: 1) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:30:32) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 34ms (View: 16, DB: 1) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:31:56) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (1.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+
+ActionView::TemplateError (invalid value for Integer: "course") on line #9 of app/views/admin/view_repo.html.erb:
+6: </p>
+7: 
+8: <p><%= course = @course.course_number %></p>
+9: <% Integer ("course") %>
+10: 
+11: <% @categories_by_course = category_by_course_alph_sorted(course) %>
+12:   <% @categories_by_course.each do |category| %>
+
+    app/views/admin/view_repo.html.erb:9:in `Integer'
+    app/views/admin/view_repo.html.erb:9
+    app/controllers/admin_controller.rb:36:in `view_repo'
+
+Rendered rescues/_trace (92.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:32:05) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 32ms (View: 15, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:33:46) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 77ms (View: 17, DB: 1) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:33:47) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 34ms (View: 16, DB: 1) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:34:02) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 33ms (View: 15, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:34:05) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 35ms (View: 15, DB: 1) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:34:18) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 30ms (View: 11, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:34:19) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (1.2ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 33ms (View: 13, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:34:59) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 222ms (View: 29, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:34:59) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 40ms (View: 13, DB: 1) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:35:00) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 36ms (View: 19, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:35:01) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 30ms (View: 12, DB: 1) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:35:19) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 40ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:35:20) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 123ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 15:35:30) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 39ms (View: 20, DB: 1) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+
+
+Processing AdminController#view_repo (for 127.0.0.1 at 2009-08-13 17:14:51) [GET]
+  Parameters: {"course_number"=>"2380"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."course_number" = '2380') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/view_repo
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 171065284) LIMIT 1[0m
+Completed in 66ms (View: 15, DB: 2) | 200 OK [http://127.0.0.1/admin/view_repo/2380]
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (1.1ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."course_number" = 2380) LIMIT 1[0m
+  [4;36;1mCategory Load (1.3ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.9ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (1.9ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (2.0ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (230.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (2.4ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.9ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (19.9ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m

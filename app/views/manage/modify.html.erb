@@ -2,7 +2,7 @@
 </div>
 <h2><p align="center">Manage Repository: <font color="green">CSCI <%= @course.course_number %></font></p></h2>
 <p align="left">
-  Select Course: <%= select_tag :course_number, options_for_select(Course::COURSE_NUMBERS) %>
+  Select Course: <%= select_tag :course_number, options_for_select(Course::COURSE_NUMBERS)%>
   <%= submit_tag "Go" %>
 </p>
 
@@ -20,7 +20,8 @@ function showWindow()
 
 <% @categories_by_course = category_by_course(@course.course_number) %>
 <% if @categories_by_course %>
-  <% for category in @categories_by_course %>
+  <p>whuddfuxup</p>
+  <% @categories_by_course.each do |category| %>
       <p><%= category.category %></p>
   <% end %>
 <% end %>
